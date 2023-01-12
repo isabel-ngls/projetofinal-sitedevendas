@@ -11,22 +11,28 @@
         <style type = "text/css">
             h1 {
                 text-align: center;
+                color: #ffff;
+            }
+
+            body {
+              background-color: #252c3a;
             }
         </style>
     </head>
 
     <body>
       <!--Barra de navegação-->
-      <div class="logo"  id="logo">
-        <h2>Loja de livro</h2>
-      </div> 
       <nav>
-        <a class="logonav" href="/"><img src="imagens/livro.png" width="105" height="auto" alt="ícone de livro"></a>
+        <a class="logonav" href="/"><img src="imagens/logo2_1.png" width="105" height="auto" alt="ícone de livro"></a>
         <ul class="nav-list">
-            <li><a href="paginainicial.html">Home</a></li>
-            <li><a href="listadelivros.html">Lista de Livros</a></li>
-            <li><a href="#">Login</a></li>
-            <li><a href="#">Perfil</a></li>
+            <li><a href="#home">Início</a></li>
+            <li><a href="#lisli">Lista de Livros</a></li>
+            <li><a href="#login">Login</a></li>
+            <li><a href="#perfil">Perfil</a></li>
+            <li><a href="#search"><form action="#" method="post">
+                    <input type="text" name="search" id="search" placeholder="Digite Aqui" required>
+                    <button type="submit"><i class="bi bi-search"></i></button>
+            </form></a></li>
           </ul>
     </nav>
 
@@ -34,124 +40,126 @@
         <h1>LISTA DE LIVROS</h1>
         <br/>
 
+        <!--Lista de livros-->
         <div class = "row roque">
-            <div class = "col-4">
+            <div class = "col-md-6 col-xl-3">
               <a href="detalhes/LabFauno_dts.html">
                 <div class="card" style="width: 18rem;">
                     <img src = "imagens/LabFauno.jpg" class= "card-img-top" alt="Capa do livro O Labirinto do Fauno">
                     <div class="card-body">
-              </a>  <p class="card-text">O Labirinto do Fauno</p>
+              </a>  <p class="card-text"><center>O Labirinto do Fauno</center></p>
                     </div>
                   </div>
-                
+                  <br/>
             </div>
 
-            <div class = "col-4">
+            <div class = "col-md-6 col-xl-3">
               <a href="detalhes/GOT_dts.html">
                 <div class="card" style="width: 18rem;">
                     <img src="imagens/got.jpg" class="card-img-top" alt="Capa do livro A Guerra dos Tronos">
                     <div class="card-body">
-              </a>  <p class="card-text">A Guerra dos Tronos</p>
+              </a>  <p class="card-text"><center>A Guerra dos Tronos</center></p>
                     </div>
                   </div>
+                  <br/>
             </div>
 
-            <div class = "col-4">
+            <div class = "col-md-6 col-xl-3">
               <a href="detalhes/SomOssos_dts.html">
                 <div class="card" style="width: 18rem;">
                     <img src="imagens/SombraOssos.jpg" class="card-img-top" alt="Capa do livro Sombra e Ossos">
                     <div class="card-body">
-              </a>  <p class="card-text">Sombra e Ossos</p>
+              </a>  <p class="card-text"><center>Sombra e Ossos</center></p>
                     </div>
                   </div>
             </div>
 
-            <div class = "col-4">
+            <div class = "col-md-6 col-xl-3">
               <a href="detalhes/2001_dts.html">
                 <div class="card" style="width: 18rem;">
                     <img src="imagens/2001.jpg" class="card-img-top" alt="Capa do livro 2001: Uma Odisseia no Espaço">
                     <div class="card-body">
-              </a>  <p class="card-text">2001: Uma Odisseia no Espaço</p>
+              </a>  <p class="card-text"><center>2001: Uma Odisseia no Espaço</center></p>
                     </div>
                   </div>
             </div>
 
-            <div class = "col-4">
+            <div class = "col-md-6 col-xl-3">
               <a href="detalhes/FrankS_dts.htm">
                 <div class="card" style="width: 18rem;">
                     <img src="imagens/frankenstein.png" class="card-img-top" alt="Capa do livro Frankenstein">
                     <div class="card-body">
-              </a>  <p class="card-text">Frankenstein</p>
+              </a>  <p class="card-text"><center>Frankenstein</center></p>
                     </div>
                   </div>
             </div>
 
-            <div class = "col-4">
+            <div class = "col-md-6 col-xl-3">
               <a href="detalhes/IluTempo_dts.html">
                 <div class="card" style="width: 18rem;">
                     <img src="imagens/IlusaoTempo.jpg" class="card-img-top" alt="Capa do livro A Ilusão do Tempo">
                     <div class="card-body">
-               </a> <p class="card-text">A Ilusão do Tempo</p>
+               </a> <p class="card-text"><center>A Ilusão do Tempo</center></p>
                     </div>
                   </div>
             </div>
 
-            <div class = "col-4">
+            <div class = "col-md-6 col-xl-3">
               <a href="detalhes/UmNosProx_dts.html">
                 <div class="card" style="width: 18rem;">
                     <img src="imagens/UmDeNos.jpg" class="card-img-top" alt="Capa do livro Um de nós é o próximo">
                     <div class="card-body">
-              </a>  <p class="card-text">Um de nós é o próximo</p>
+              </a>  <p class="card-text"><center>Um de nós é o próximo</center></p>
                     </div>
                   </div>
             </div>
 
-            <div class = "col-4">
+            <div class = "col-md-6 col-xl-3">
               <a href="detalhes/AssExprOri_dts.html">
                 <div class="card" style="width: 18rem;">
                     <img src="imagens/ExpressoOriente.jpg" class="card-img-top" alt="Capa do livro Assassinato no Expresso do Oriente">
                     <div class="card-body">
-              </a>  <p class="card-text">Assassinato no Expresso do Oriente</p>
+              </a>  <p class="card-text"><center>Assassinato no Expresso do Oriente</center></p>
                     </div>
                   </div>
             </div>
 
-            <div class = "col-4">
+            <div class = "col-md-6 col-xl-3">
               <a href="detalhes/CaixaPass_dts.html">
                 <div class="card" style="width: 18rem;">
                     <img src="imagens/CaixaDePassaros.jpg" class="card-img-top" alt="Capa do livro Caixa de Pássaros">
                     <div class="card-body">
-              </a>  <p class="card-text">Caixa de Pássaros</p>
+              </a>  <p class="card-text"><center>Caixa de Pássaros</center></p>
                     </div>
                   </div>
             </div>
 
-            <div class = "col-4">
+            <div class = "col-md-6 col-xl-3">
               <a href="detalhes/OrgPre_dts.html">
                 <div class="card" style="width: 18rem;">
                     <img src="imagens/OrgPre.jpg" class="card-img-top" alt="Capa do livro Orgulho e Preconceito">
                     <div class="card-body">
-              </a>  <p class="card-text">Orgulho e Preconceito</p>
+              </a>  <p class="card-text"><center>Orgulho e Preconceito</center></p>
                     </div>
                   </div>
             </div>
 
-            <div class = "col-4">
+            <div class = "col-md-6 col-xl-3">
               <a href="detalhes/7mEH_dts.html">
                 <div class="card" style="width: 18rem;">
                     <img src="imagens/EvelynHugo.jpg" class="card-img-top" alt="Capa do livro Os sete maridos de Evelyn Hugo">
                     <div class="card-body">
-              </a>  p class="card-text">Os sete maridos de Evelyn Hugo</p>
+              </a>  <p class="card-text"><center>Os sete maridos de Evelyn Hugo</center></p>
                     </div>
                   </div>
             </div>
 
-            <div class = "col-4">
+            <div class = "col-md-6 col-xl-3">
               <a href="detalhes/CulpaEstre_dts.html">
                 <div class="card" style="width: 18rem;">
                     <img src="imagens/CulpaEstrelas.jpg" class="card-img-top" alt="Capa do livro A Culpa é Das Estrelas">
                     <div class="card-body">
-              </a>  <p class="card-text">A Culpa é Das Estrelas</p>
+              </a>  <p class="card-text"><center>A Culpa é Das Estrelas</center></p>
                     </div>
                   </div>
             </div>

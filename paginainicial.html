@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Loja de Livros</title>
     <link rel="stylesheet" href="css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
 
     <style>
 
@@ -82,7 +83,10 @@ body{
     background-color: #23232e;
   }
  
-
+  .row{
+    margin-top: 78px;
+    background-color: #23232e;
+  }
   
     </style>
 </head>
@@ -103,35 +107,65 @@ body{
                 </form></a></li>
               </ul>
         </nav>
-       
+       <center>
         <table>
           <tr>
             <th><img src="imagens/logosemnome.png" width="100" height="auto" alt="logosemnome"></th>
-            <th></th>
+            <th><p>Hermes Bookstore! A MELHOR LOJA PARA COMPRAR SEU LIVRO</p></th>
+
+            <th><p>50% DE DESCONTO NA ABERTURA DA LOJA! NÃO PERCA!!!</p></th>
+            <th><img src="imagens/logosemnome.png" width="100" height="auto" alt="logosemnome"></th>
           </tr>
         </table>
+      </center>
+       
+
+        <!--abaixo tentativa bootstrap-->
+        <div class="row">
+
+        <div class="col-md-6 col-xl-3" >
+          <a href="file:///C:/Users/20201194010005/Desktop/projetofinal-sitedevendas/detalhes/SomOssos_dts.html">
+          <div class="card" style="width: 18rem;">
+          <img src="imagens/seo.jpg" class="card-img-top" alt="sombraeossos">
+          <div class="card-body">
+          </a>  <p class="card-text"><center>Compre Sombra e Ossos Aqui!</center></p>
+          </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-xl-3" >
+          <a href="file:///C:/Users/20201194010005/Desktop/projetofinal-sitedevendas/detalhes/2001_dts.html">
+          <div class="card" style="width: 18rem;">
+            <img src="imagens/2001.jpg" class="card-img-top" alt="2001">
+            <div class="card-body">
+            </a> <p class="card-text"><center>Compre 2001</center></p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-xl-3" >
+          <a href="file:///C:/Users/20201194010005/Desktop/projetofinal-sitedevendas/detalhes/CaixaPass_dts.html">
+            <div class="card" style="width: 18rem;">
+              <img src="imagens/bb.jpg" class="card-img-top" alt="bb">
+              <div class="card-body">
+              </a> <p class="card-text"><center>Compre Bird Box Aqui!</center></p>
+              </div>  
+            </div>
+          </div>
+
+          <div class="col-md-6 col-xl-3" >
+            <a href="file:///C:/Users/20201194010005/Desktop/projetofinal-sitedevendas/detalhes/OrgPre_dts.html">
+              <div class="card" style="width: 18rem;">
+                <img src="imagens/oep.jpg" class="card-img-top" alt="sombraeossos">
+                <div class="card-body">
+                </a><p class="card-text"><center>Compre Orgulho e Preconceito</center> </p>
+                </div>
+              </div>
+        </div>
         
-        <table>
-            <tr>
-                <a href=""></a>
-                <th><img src="imagens/seo.jpg" width="115" height="auto" alt="sombraeossos"></th>
-                 
-            </tr>
-            <tr><th><a href="https://www.amazon.com.br/Sombra-Ossos-Leigh-Bardugo/dp/6555352795/ref=sr_1_1?crid=3AN7ZWTVOS2NE&keywords=sombra+e+ossos&qid=1673486835&sprefix=som%2Caps%2C241&sr=8-1">Compre Sombra e Ossos Aqui!</a></th></tr>
-            
-                <th><img src="imagens/2001.jpg" width="115" height="auto" alt="sombraeossos"></th>
-            
-            <tr><th><a href="https://www.amazon.com.br/2001-Uma-Odisseia-no-Espa%C3%A7o/dp/6586064066/ref=sr_1_1?crid=35LGU5L2EXQ94&keywords=2001+uma+odisseia+no+espa%C3%A7o&qid=1673487071&sprefix=200%2Caps%2C323&sr=8-1">Compre 2001: Uma Odisseia no Espaço Aqui!</a></th></tr>
-            
-                <th><img src="imagens/bb.jpg" width="115" height="auto" alt="sombraeossos"></th>
-           
-            <tr><th><a href="https://www.amazon.com.br/Caixa-P%C3%A1ssaros-Josh-Malerman/dp/8580576520/ref=sr_1_1?crid=1H78PTJALIQRR&keywords=caixa+de+passaros&qid=1673487177&sprefix=caixa+de+pass%2Caps%2C269&sr=8-1">Compre Bird Box Aqui!</a></th></tr>
-            >
-                <th><img src="imagens/oep.jpg" width="115" height="auto" alt="sombraeossos"></th>
-            </tr>
-            <tr><th><a href="https://www.amazon.com.br/Orgulho-Preconceito-Jane-Austen/dp/8544001823/ref=sr_1_2?crid=1XVSHR3R3DKCX&keywords=orgulho+e+preconceito&qid=1673487358&sprefix=or%2Caps%2C350&sr=8-2">Compre Orgulho e Preconceito Aqui!</a></th></tr>
-        </table>
-        
+ 
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+
        
 </body>
 </html>

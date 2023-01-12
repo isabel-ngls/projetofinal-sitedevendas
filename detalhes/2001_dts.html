@@ -5,8 +5,40 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>2001: Uma Odisseia no Espaço</title>
+    <link rel="stylesheet" href="css/style.css">
+
+    <style>
+        a {
+    color: #ffff;
+    text-decoration: none;
+    transition: 0.3s;
+  }
+     nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background: #23232e;
+    height: 8vh;
+    margin-top: 20px;
+        } 
+        .logonav{
+    padding-top: 5px;
+  }
+
+  .nav-list {
+    list-style: none;
+    display: flex;
+  }
+  
+  .nav-list li {
+    letter-spacing: 3px;
+    margin-left: 32px;
+    text-transform:uppercase;
+  }
+    </style>
 </head>
 <body>
+    <!-- 
     <img src="../imagens/2001.jpg" >
     <div class="principal">
 
@@ -15,7 +47,22 @@
         <p>Gênero: Ficção científica</p>
         <p>Lançamento: 29 de abril de 1968</p>
         <p>Preço: R$: 25,00 </p>
-
     </div>
+    -->
+    <div class="logo"  id="logo">
+        <h2>Loja de livro</h2>
+      </div> 
+      <nav>
+        <a class="logonav" href="/"><img src="../imagens/livro.png" width="105" height="auto" alt="ícone de livro"></a>
+        <ul class="nav-list">
+            <li><a href="../diogo.html">Home</a></li>
+            <li><a href="../listadelivros.html">Lista de Livros</a></li>
+            <li><a href="#">Login</a></li>
+            <li><a href="#">Perfil</a></li>
+          </ul>
+    </nav>
+
+
+
 </body>
 </html>

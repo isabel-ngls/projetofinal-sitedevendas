@@ -6,23 +6,117 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Loja de Livros</title>
     <link rel="stylesheet" href="css/style.css">
+
+    <style>
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Inter', sans-serif;
+    background-color: #252c3a;
+}
+        nav-list{
+    margin: 0;
+    padding: 0;
+    font-size: 12px;
+  }
+  
+  a {
+    color: #ffff;
+    text-decoration: none;
+    transition: 0.3s;
+  }
+
+   a:hover {
+    opacity: 0.5;
+  }  
+  nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background: #23232e;
+    height: 8vh;
+    margin-top: 20px;
+  }
+
+  .logonav{
+    padding-top: 5px;
+  }
+
+  .nav-list {
+    list-style: none;
+    display: flex;
+  }
+  
+  .nav-list li {
+    letter-spacing: 3px;
+    margin-left: 32px;
+    text-transform:uppercase;
+  }
+  .logo h2{
+    color: #ffff;
+    text-transform:uppercase
+    
+}
+.tabela{
+    padding-top: 25px;
+  }
+  
+  table{
+   
+    margin-top: 68px;
+    border-color: #0772EB;
+    border-collapse: separate;
+  }
+
+  th, td{
+    padding: 10px;
+    margin-top: 20px;
+  }
+
+  th{
+    color: #0772EB;
+    background-color: #23232e;
+  }
+    </style>
 </head>
 <body>
     <!-- Cabeçalho -->
     <header>
         <div class="logo"  id="logo">
-            <img src="imagens/livro.png" width="85" height="65" alt="ícone de livro azul">
             <h2>Loja de livro</h2>
           </div> 
-        <nav>
-            <a class="logo" href="/"> Loja de Livros</a>
+          <nav>
+            <a class="logonav" href="/"><img src="imagens/livro.png" width="105" height="auto" alt="ícone de livro"></a>
             <ul class="nav-list">
-                <li><a href="/">Livros</a></li>
-                <li><a href="/">Gêneros</a></li>
-                <li><a href="/">Autores</a></li>
-            </ul>
+                <li><a href="#css">Livros</a></li>
+                <li><a href="#sintaxe">Gênero</a></li>
+                <li><a href="#props">Autores</a></li>
+                <li><a href="#material">Promoções</a></li>
+                <li><a href="#teste">Teste</a></li>
+              </ul>
         </nav>
-    </header>
-    <main></main>
+       
+        
+        <table>
+            <tr>
+                <a href=""></a>
+                <th><img src="imagens/seo.jpg" width="115" height="auto" alt="sombraeossos"></th>
+            
+            <tr><th><a href="https://www.amazon.com.br/Sombra-Ossos-Leigh-Bardugo/dp/6555352795/ref=sr_1_1?crid=3AN7ZWTVOS2NE&keywords=sombra+e+ossos&qid=1673486835&sprefix=som%2Caps%2C241&sr=8-1">Compre Sombra e Ossos Aqui!</a></th></tr>
+            
+                <th><img src="imagens/2001.jpg" width="115" height="auto" alt="sombraeossos"></th>
+            
+            <tr><th><a href="https://www.amazon.com.br/2001-Uma-Odisseia-no-Espa%C3%A7o/dp/6586064066/ref=sr_1_1?crid=35LGU5L2EXQ94&keywords=2001+uma+odisseia+no+espa%C3%A7o&qid=1673487071&sprefix=200%2Caps%2C323&sr=8-1">Compre 2001: Uma Odisseia no Espaço Aqui!</a></th></tr>
+            
+                <th><img src="imagens/bb.jpg" width="115" height="auto" alt="sombraeossos"></th>
+           
+            <tr><th><a href="https://www.amazon.com.br/Caixa-P%C3%A1ssaros-Josh-Malerman/dp/8580576520/ref=sr_1_1?crid=1H78PTJALIQRR&keywords=caixa+de+passaros&qid=1673487177&sprefix=caixa+de+pass%2Caps%2C269&sr=8-1">Compre Bird Box Aqui!</a></th></tr>
+            >
+                <th><img src="imagens/oep.jpg" width="115" height="auto" alt="sombraeossos"></th>
+            </tr>
+            <tr><th><a href="https://www.amazon.com.br/Orgulho-Preconceito-Jane-Austen/dp/8544001823/ref=sr_1_2?crid=1XVSHR3R3DKCX&keywords=orgulho+e+preconceito&qid=1673487358&sprefix=or%2Caps%2C350&sr=8-2">Compre Orgulho e Preconceito Aqui!</a></th></tr>
+        </table>
+  
 </body>
 </html>

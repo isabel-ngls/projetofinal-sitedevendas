@@ -41,6 +41,7 @@ body{
 
   .logonav{
     padding-top: 5px;
+    
   }
 
   .nav-list {
@@ -54,6 +55,7 @@ body{
     text-transform:uppercase;
   }
   .logo h2{
+   
     padding: 10px;
     color: #ffff;
     text-transform:uppercase
@@ -87,19 +89,27 @@ body{
 <body>
     <!-- Cabeçalho -->
     <header>
-        <div class="logo"  id="logo">
-            <h2>livraria Hermes</h2>
-          </div> 
+        
           <nav>
-            <a class="logonav" href="/"><img src="imagens/livro.png" width="105" height="auto" alt="ícone de livro"></a>
+            <a class="logonav" href="/"><img src="imagens/logo2_1.png" width="105" height="auto" alt="ícone de livro"></a>
             <ul class="nav-list">
-                <li><a href="#css">Home</a></li>
-                <li><a href="#sintaxe">Lista de Livros</a></li>
-                <li><a href="#props">Login</a></li>
-                <li><a href="#material">Perfil</a></li>
+                <li><a href="#home">Início</a></li>
+                <li><a href="#lisli">Lista de Livros</a></li>
+                <li><a href="#login">Login</a></li>
+                <li><a href="#perfil">Perfil</a></li>
+                <li><a href="#search"><form action="#" method="post">
+                        <input type="text" name="search" id="search" placeholder="Digite Aqui" required>
+                        <button type="submit"><i class="bi bi-search"></i></button>
+                </form></a></li>
               </ul>
         </nav>
        
+        <table>
+          <tr>
+            <th><img src="imagens/logosemnome.png" width="100" height="auto" alt="logosemnome"></th>
+            <th></th>
+          </tr>
+        </table>
         
         <table>
             <tr>

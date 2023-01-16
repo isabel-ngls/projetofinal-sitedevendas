@@ -39,22 +39,6 @@
         text-decoration: none;
         transition: 0.3s;
         }
-        .voltar{
-    background-color: #0772EB;
-    display: inline-block;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    margin-top: 25px;
-    padding-right: 15px;
-    padding-left: 15px;
-    position: static;
-    text-align: justify;
-    border-radius: 50px;
-    text-transform: uppercase;
-    font-size: 15px;
-    font-weight: bold;
-   }
-
     </style>
 </head>
 <body>
@@ -63,7 +47,7 @@
     <ul class="nav-list">
         <li><a href="../paginainicial.html">Home</a></li>
         <li><a href="../listadelivros.html">Lista de Livros</a></li>
-        <li><a href="../login.html">Login</a></li>
+        <li><a href="#">Login</a></li>
         <li><a href="#">Perfil</a></li>
         <li><a href="#search"><form action="#" method="post">
           <input type="text" name="search" id="search" placeholder="Digite Aqui" required>
@@ -72,59 +56,77 @@
       </ul>
 </nav>
 
-<br/> 
+<div class="container-fluid">
 
-<div class="card" style="width: 10rem; float: inline-start; margin-right: 15px">
-  <img class="card-img-top" src="../imagens/EvelynHugo.jpg" alt="Capa do livro Os 7 Maridos de Evelyn Hugo">
-  <div class="card-body">
-    <h5 class="card-title">Os 7 Maridos de Evelyn Hugo</h5>
-    <img class="img-fluid" src="../imagens/5_5.png" alt="5 estrelas">
-    <a href="#" class="btn btn-primary" style="background-color:#23232e">Compre o livro aqui!</a>
-  </div>
-</div>
+  <div class="row mt-5">
 
-<div class="principal" style="align-items: center;">
-  <div class="col-sm-6" style="float: left; max-width: 33%; margin-right: 50px;">
-    <br>
-    <h3>Sinopse</h3>
-    <p>
-      Lendária estrela de Hollywood, Evelyn Hugo sempre esteve sob os holofotes — seja estrelando uma produção vencedora do Oscar, protagonizando algum escândalo ou aparecendo com um novo marido… pela sétima vez. <br>
-      Agora, prestes a completar oitenta anos e reclusa em seu apartamento no Upper East Side, a famigerada atriz decide contar a própria história — ou sua "verdadeira história" —, mas com uma condição: que Monique Grant, jornalista iniciante e até então desconhecida, seja a entrevistadora. <br>
-      Ao embarcar nessa misteriosa empreitada, a jovem repórter começa a se dar conta de que nada é por acaso — e que suas trajetórias podem estar profunda e irreversivelmente conectadas. <br>
-    </p>
-        
-  </div>
 
-  <div class="col-sm-6" style="float: left;">                   
+    <div class="col-lg-2 col-4">
+      <div class="card" style="width: 10rem; float: inline-start; margin-right: 15px">
+        <img class="card-img-top" src="../imagens/EvelynHugo.jpg" alt="Capa do livro Os 7 Maridos de Evelyn Hugo">
+          <div class="card-body">
+            <h5 class="card-title">Os 7 Maridos de Evelyn Hugo</h5>
+            <img class="img-fluid" src="../imagens/5_5.png" alt="5 estrelas">
+            <a href="#" class="btn btn-primary" style="background-color:#23232e">Compre o livro aqui!</a>
+          </div>
+      </div>
+    </div>
+
+    
+    <div class="col-lg-5 col-8">
+      <br>
+      <h3>Sinopse</h3>
+      <p>
+        Lendária estrela de Hollywood, Evelyn Hugo sempre esteve sob os holofotes — seja estrelando uma produção vencedora do Oscar, protagonizando algum escândalo ou aparecendo com um novo marido… pela sétima vez. <br>
+        Agora, prestes a completar oitenta anos e reclusa em seu apartamento no Upper East Side, a famigerada atriz decide contar a própria história — ou sua "verdadeira história" —, mas com uma condição: que Monique Grant, jornalista iniciante e até então desconhecida, seja a entrevistadora. <br>
+        Ao embarcar nessa misteriosa empreitada, a jovem repórter começa a se dar conta de que nada é por acaso — e que suas trajetórias podem estar profunda e irreversivelmente conectadas. <br>
+      </p>       
+    </div>
+
+    <div class="col-lg-5 col-4">                   
     <br>
     <h3> <b>Detalhes</b> </h3>
-      <li><b>Autor:</b> Taylor Jenkins Reid</li>
-      <br>
-      <li><b>Gênero:</b> Romance</li>
-      <br>
-      <li><b>Lançamento:</b> 13 de junho de 2017</li>
-      <br>
-      <li><b>Preço:</b> R$ 35,00</li>     
-  </div>
-</div>
+    <li><b>Autor:</b> Taylor Jenkins Reid</li>
+    <br>
+    <li><b>Gênero:</b> Romance</li>
+    <br>
+    <li><b>Lançamento:</b> 13 de junho de 2017</li>
+    <br>
+    <li><b>Preço:</b> R$ 35,00</li>      
+    </div>
 
-<div class="col-sm-6 col-md-3"  style="float: left;">
-  <div >
-    <h3><br><b>Verifique outros livros de Romance</b></h3>
-    <ul style="float: left">
-      <li><a href="CulpaEstre_dts.html">A Culpa é das Estrelas</a></li>
-      <li><a href="OrgPre_dts.html">Orgulho e Preconceito</a></li>
-    </ul> 
+  </div> <!--Row 1-->
+
+
+  <div class="row mt-3">
     
-    <img src="../imagens/livro2.png" width="100px" style="float:inline-end">
-  </div>
-</div>
+      <div class="col-sm-6 col-md-3"  style="float: left;">
+
+            <h3><b>Verifique outros livros de Romance</b></h3>
+            <ul style="float: left">
+              <li><a href="CulpaEstre_dts.html">A Culpa é das Estrelas</a></li>
+              <li><a href="OrgPre_dts.html">Orgulho e Preconceito</a></li>
+            </ul>
+      </div>
+
+      <div class="col-sm-6 col-md-3"  style="float: left;">
+        <img src="../imagens/livro2.png" width="100px" >
+      </div>   
+       
+  </div> <!--Row 2-->
+
+</div><!--Fim Conteiner-->
+
+
+
 <section class="menu contpag">
   <div class="voltar">
       <a href="../listadelivros.html">Voltar</a>
   </div>
-  </section>
-<footer >
+</section>
+
+
+<footer style="color: #ffff;" >
   <br/>
   <br/>
   <br/>

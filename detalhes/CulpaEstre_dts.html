@@ -57,25 +57,25 @@
 <body>
     <div class="logo"  id="logo">
       </div> 
-      <nav class="col-md col-xl navbar navbar-expand-lg navbar-dark bg-dark" style="margin-bottom: 1%;" id = "navbar">
+      <nav class="col-md col-xl navbar navbar-expand-lg navbar-dark bg-dark" id = "navbar">
         <div class="container-fluid">
-            <a class="logonav" href="paginainicial.html"><img src="../imagens/logo2_1.png" width="80" height="auto" alt="ícone de livro"></a>
+            <a class="logonav" href="../paginainicial.html"><img src="../imagens/logo2_1.png" width="80" height="auto" alt="ícone de livro"></a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
               <li class="nav-item" style = "margin: 20px;">
-                <a class="nav-link" href="paginainicial.html">HOME</a>
+                <a class="nav-link" href="../paginainicial.html">HOME</a>
               </li>
               <li class="nav-item" style = "margin: 20px;">
-                <a class="nav-link" href="listadelivros.html">LISTA DE LIVROS</a>
+                <a class="nav-link" href="../listadelivros.html">LISTA DE LIVROS</a>
               </li>
               <li class="nav-item" style = "margin: 20px;">
                 <a class="nav-link" href="#">CADASTRO</a>
               </li>
               <li class="nav-item" style = "margin: 20px;">
-                <a class="nav-link" href="login.html">LOGIN</a>
+                <a class="nav-link" href="../login.html">LOGIN</a>
               </li>
               <li class="nav-item" style = "margin: 20px;">
                 <a class="nav-link" href="#">PERFIL</a>
@@ -88,52 +88,70 @@
           </div>
         </div>
       </nav>
-
     <br/>
 
-    <div class="card" style="width: 10rem; float: inline-start; margin-right: 15px">
-      <img class="card-img-top" src="../imagens/CulpaEstrelas.jpg" alt="Capa do livro A culpa é das estrelas">
-      <div class="card-body">
-        <h5 class="card-title">A culpa é das estrelas</h5>
-        <img class="img-fluid" src="../imagens/5_5.png" alt="5 estrelas">
-        <a href="#" class="btn btn-primary" style="background-color:#23232e">Compre o livro aqui!</a>
-      </div>
-    </div>
+    <div class="container-fluid">
 
-
-    <div class="principal" style="align-items: center;">
-      <div class="col-sm-6" style="float: left; max-width: 33%; margin-right: 50px;">
-        <br>
-        <h3>Sinopse</h3>
-        <p>
+      <div class="row mt-5">
+    
+    
+        <div class="col-lg-2 col-4">
+          <div class="card" style="width: 10rem; float: inline-start; margin-right: 15px">
+            <img class="card-img-top" src="../imagens/CulpaEstrelas.jpg" alt="Capa do livro A culpa é das estrelas">
+              <div class="card-body">
+                <h5 class="card-title">A culpa é das estrelas</h5>
+                <img class="img-fluid" src="../imagens/5_5.png" alt="5 estrelas">
+                <a href="#" class="btn btn-primary" style="background-color:#23232e">Compre o livro aqui!</a>
+              </div>
+          </div>
+        </div>
+    
+        
+        <div class="col-lg-5 col-8">
+          <br>
+          <h3>Sinopse</h3>
+          <p>
             Hazel é uma paciente terminal. Ainda que, por um milagre da medicina, seu tumor tenha encolhido bastante ― o que lhe dá a promessa de viver mais alguns anos ―, o último capítulo de sua história foi escrito no momento do diagnóstico.
             Mas em todo bom enredo há uma reviravolta, e a de Hazel se chama Augustus Waters, um garoto bonito que certo dia aparece no Grupo de Apoio a Crianças com Câncer. Juntos, os dois vão preencher o pequeno infinito das páginas em branco de suas vidas.
-        </p>
-            
-      </div>
-  
-      <div class="col-sm-6" style="float: left;">                   
+         </p>       
+        </div>
+    
+        <div class="col-lg-5 col-4">                   
         <br>
         <h3> <b>Detalhes</b> </h3>
+        <li><b>Autor:</b> Arthur C. Clarke</li>
+          <br>
           <li><b>Autor:</b> John Green</li>
           <br>
           <li><b>Gênero:</b> Romance</li>
           <br>
           <li><b>Lançamento:</b>  10 de janeiro de 2012 </li>
           <br>
-          <li><b>Preço:</b> R$: 28,90 </li>     
-      </div>
+          <li><b>Preço:</b> R$: 28,90 </li>          
+        </div>
+    
+      </div> <!--Row 1-->
+    
+    
+      <div class="row mt-3">
+        
+          <div class="col-sm-6 col-md-3"  style="float: left;">
+    
+            <h3><b>Verifique outros livros de Romance</b> </h3>
+              <ul style="float: left;">
+              <li><a href="7mEH_dts.html">Os 7 maridos de Evelyn Hugo</a></li>
+              <li><a href="OrgPre_dts.html">Orgulho e Preconceito</a></li>
+              </ul>
+          </div>
+    
+          <div class="col-sm-6 col-md-3"  style="float: left;">
+            <img src="../imagens/livro2.png" width="100px" >
+          </div>   
+           
+      </div> <!--Row 2-->
+    
+    </div><!--Fim Conteiner-->
 
-    </div>
-
-    <div class="col-sm-6 col-md-3"  style="float: left;">
-      <h3><b>Verifique outros livros de Romance</b> </h3>
-      <ul style="float: left;">
-        <li><a href="7mEH_dts.html">Os 7 maridos de Evelyn Hugo</a></li>
-        <li><a href="OrgPre_dts.html">Orgulho e Preconceito</a></li>
-      </ul>
-      <img src="../imagens/livro2.png" width="100px" style="float:inline-end">
-    </div>
     <section class="menu contpag">
       <div class="voltar">
           <a href="../listadelivros.html">Voltar</a>

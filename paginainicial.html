@@ -11,7 +11,7 @@
     <style>
 
 body{
-    margin: 0;
+    margin: 20px;
     padding: 0;
     font-family: 'Inter', sans-serif;
     background-color: #252c3a;
@@ -25,7 +25,6 @@ table{
   }
 
   p{
-    margin-top: 50px;
    background-color: #2c3547;
     color: #ffff;
   }
@@ -56,15 +55,37 @@ table{
     <!-- Cabeçalho -->
     <header>
         
-          <nav>
-            <a class="logonav" href="/"><img src="imagens/logo2_1.png" width="105" height="auto" alt="ícone de livro"></a>
-            <ul class="nav-list">
-                <li><a href="paginainicial.html">Home</a></li>
-                <li><a href="listadelivros.html">Lista de Livros</a></li>
-                <li><a href="login.html">Login</a></li>
-                <li><a href="#perfil">Perfil</a></li>
-              </ul>
-        </nav>
+      <nav class="col-md col-xl navbar navbar-expand-lg navbar-dark bg-dark" id = "navbar">
+        <div class="container-fluid">
+            <a class="logonav" href="paginainicial.html"><img src="imagens/logo2_1.png" width="80" height="auto" alt="ícone de livro"></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item" style = "margin: 20px;">
+                <a class="nav-link" href="paginainicial.html">HOME</a>
+              </li>
+              <li class="nav-item" style = "margin: 20px;">
+                <a class="nav-link" href="listadelivros.html">LISTA DE LIVROS</a>
+              </li>
+              <li class="nav-item" style = "margin: 20px;">
+                <a class="nav-link" href="#">CADASTRO</a>
+              </li>
+              <li class="nav-item" style = "margin: 20px;">
+                <a class="nav-link" href="login.html">LOGIN</a>
+              </li>
+              <li class="nav-item" style = "margin: 20px;">
+                <a class="nav-link" href="#">PERFIL</a>
+              </li>
+            </ul>
+            <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="Digite sua busca" aria-label="Search">
+              <button class="btn btn-dark" type="submit">Buscar</button>
+            </form>
+          </div>
+        </div>
+      </nav>
         
        <center>
         <table>

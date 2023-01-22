@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login | Hermes Bookstore</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel = "stylesheet" href = "navbar.css">
+    <link rel = "stylesheet" href = "style.css">
+    <style>
+        body{
+            margin: 20px;
+            background-color: #252c3a;
+            font-family: Arial, Helvetica, sans-serif;
+            overflow: hidden;
+        }
+        .area-login{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 70vh;
+            justify-content: center;
+            align-items: center;
+        }
+        .login{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background-color: #ffffff;
+            border-radius: 15px;
+            width: 355px;
+            height: 420px;
+            padding: 35px;
+        }
+        .login form{
+            display: flex;
+            width: 100%;
+            flex-direction: column;
+        }
+        .login input{
+            margin-top: 10px;
+            background-color: #ffff;
+            padding-left: 10px;
+            color: black;
+            border: none;
+            height: 35px;
+            outline: none;
+            border-radius: 8px;
+        }
+        .login img{
+            width: 95px;
+            height: auto;
+        }
+        .login::placeholder{
+            color: black;
+            font-size: 14px;
+            
+        }
+        form [type="submit"]{
+            display: block;
+            background-color: #0772EB;
+            font-size: 20px;
+            text-transform: uppercase;
+            font-weight: bold;
+            color: #ffff;
+            cursor: pointer;
+        }
+        p{
+            color: #ffff;
+        }
+        a{
+            color: #0772EB;
+            text-decoration: none;
+            margin-left: 5px;
+        }
+        .cena{
+            color: #ffff;
+        }
+    </style>
+</head>
+<body>
+    <nav class="col-md col-xl navbar navbar-expand-lg navbar-dark bg-dark" id = "navbar">
+        <div class="container-fluid">
+            <a class="logonav" href="paginainicial.html"><img src="imagens/logo2_1.png" width="80" height="auto" alt="ícone de livro"></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item" style = "margin: 20px;">
+                <a class="nav-link" href="paginainicial.html">HOME</a>
+              </li>
+              <li class="nav-item" style = "margin: 20px;">
+                <a class="nav-link" href="listadelivros.html">LISTA DE LIVROS</a>
+              </li>
+              <li class="nav-item" style = "margin: 20px;">
+                <a class="nav-link" href="cadastro.html">CADASTRO</a>
+              </li>
+              <li class="nav-item" style = "margin: 20px;">
+                <a class="nav-link" href="login.html">LOGIN</a>
+              </li>
+              <li class="nav-item" style = "margin: 20px;">
+                <a class="nav-link" href="perfil.html">PERFIL</a>
+              </li>
+            </ul>
+            <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="Digite sua busca" aria-label="Search">
+              <button class="btn btn-dark" type="submit">Buscar</button>
+            </form>
+          </div>
+        </div>
+      </nav>
+    <section class="area-login">
+        <div class="login">
+           
+            <form>
+                <label for="cena">Nome do Livro:</label>
+                <input type="text" name="usuario" placeholder="Nome" autofocus>
+
+                <label for="cena">Sinopse:</label>
+                <input type="text" name="nome" placeholder="Sinopse" autofocus>
+
+                <label for="cena">Autor:</label>
+                <input type="text" name="nome" placeholder="Autor" autofocus>
+
+                <label for="cena">Data de Lançamento:</label>
+                <input type="date" name="data_lancamento" placeholder="Data" id="lancamento" autofocus />
+
+                <label for="cena">Capa do Livro:</label>
+                <input type="file" name="cena" id="cena" required />
+              
+                <input type="submit" value="entrar">
+            </form>
+           
+        </div>
+
+    </section>
+    <footer>
+        <br/>
+        <br/>
+        <br/>
+          <p><center>Copyright &copy Hermes Bookstore - IFRN Cang 2023</center></p>
+      </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+</body>
+</html>

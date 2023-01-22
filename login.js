@@ -13,14 +13,14 @@ const usuarios = [
     }
 ]
 
-let botao = document.getElementById("btn-login")
+let botao = document.getElementById("btn-login");
 
 botao.addEventListener('click', function login () {
     let pegaEmail = document.getElementById("email").value
     let pegaSenha = document.getElementById("senha").value
     let validaLogin = false
 
-    for (let i in usuarios) {
+    for(let i in usuarios) {
         
         if (pegaEmail == usuarios[i].email && pegaSenha == usuarios[i].senha) {
             validaLogin = true

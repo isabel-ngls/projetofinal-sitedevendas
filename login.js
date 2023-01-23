@@ -13,24 +13,24 @@ const usuarios = [
     }
 ]
 
-let botao = document.getElementById("btn-login");
+let botao = document.getElementById('btn-login');
 
 botao.addEventListener('click', function login () {
-    let pegaEmail = document.getElementById("email").value
-    let pegaSenha = document.getElementById("senha").value
-    let validaLogin = false
+    let pegaEmail = document.getElementById("email").value;
+    let pegaSenha = document.getElementById("senha").value;
+    let validaLogin = false;
 
     for(let i in usuarios) {
         
         if (pegaEmail == usuarios[i].email && pegaSenha == usuarios[i].senha) {
-            validaLogin = true
-            break
+            validaLogin = true;
+            break;
         }
 
     }
 
     if (validaLogin == true ) {
-        location.href = 'perfil.html'
+        location.href = "paginainicial.html";
     } else {
         alert('ERRO: E-mail ou senha incorretos ou não cadastrados!')
     }

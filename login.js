@@ -15,7 +15,7 @@ const usuarios = [
 
 let botao = document.getElementById('btn-login');
 
-botao.addEventListener('click', function login () {
+botao.addEventListener('click', function login() {
     let pegaEmail = document.getElementById("email").value;
     let pegaSenha = document.getElementById("senha").value;
     let validaLogin = false;
@@ -30,7 +30,7 @@ botao.addEventListener('click', function login () {
     }
 
     if (validaLogin == true ) {
-        location.href = "paginainicial.html";
+        location.href = "perfil.html";
     } else {
         alert('ERRO: E-mail ou senha incorretos ou não cadastrados!')
     }

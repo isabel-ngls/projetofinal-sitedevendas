@@ -8,7 +8,7 @@ const usuarios = [
         senha: '654321'
     },
     {
-        email: 'leticiamatias@gmail',
+        email: 'leticiamatias@gmali',
         senha: '456789'
     }
 ]

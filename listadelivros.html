@@ -41,9 +41,18 @@
         transition: 0.3s;
         }
 
-        .filtro {
-          background-color: #252c3a;
+        h6 {
+          color: #ffff;
         }
+
+        h3 {
+          color: #ffff;
+        }
+
+        .filtro {
+          background-color: #23232e;
+        }
+
         .voltar, .avancar{
     background-color: #0772EB;
     display: inline-block;
@@ -100,7 +109,81 @@
         <h1>LISTA DE LIVROS</h1>
         <br/>
 
+        <!--Filtro-->
+        <section id = "filtro">
+          <h3>Filtrar por: </h3>
+          <div class="mb-3">
+            <label for="exampleFormControlInput1" class="form-label" id = "palavra-chave"><h6>Palavra-chave:</h6></label>
+            <input type="email" class="form-control" id="exampleFormControlInput1">
+          </div>
+
+          <div>
+            <label for="exampleInputEmail1" class="form-label"><h6>Por gênero: </h6></label>
+
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+              <label class="form-check-label" for="flexRadioDefault1">
+                <h6>Fantasia</h6>
+              </label>
+            </div>
+
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2">
+              <label class="form-check-label" for="flexRadioDefault2">
+                <h6>Ficção científica</h6>
+              </label>
+            </div>
+
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault3">
+              <label class="form-check-label" for="flexRadioDefault3">
+                <h6>Romance</h6>
+              </label>
+            </div>
+
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault4">
+              <label class="form-check-label" for="flexRadioDefault4">
+                <h6>Suspense</h6>
+              </label>
+            </div>
+
+            <div>
+              <label for="exampleInputEmail1" class="form-label"><h6>Por preço: </h6></label>
+              
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                <label class="form-check-label" for="flexRadioDefault1">
+                  <h6>De R$ 20,00 a R$ 25,00</h6>
+                </label>
+              </div>
+
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                <label class="form-check-label" for="flexRadioDefault1">
+                  <h6>De R$ 25,00 a R$ 35,00</h6>
+                </label>
+              </div>
+
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                <label class="form-check-label" for="flexRadioDefault1">
+                  <h6>De R$ 35,00 a R$ 50,00</h6>
+                </label>
+              </div>
+
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                <label class="form-check-label" for="flexRadioDefault1">
+                  <h6>Mais de R$ 50,00</h6>
+                </label>
+              </div>
+              <br/>
+
+        </section>
+
         <!--Lista de livros-->
+        <center>
         <div class = "row">
 
             <div class = "col-md-6 col-xl-3">
@@ -231,6 +314,7 @@
                         </div>
                       </div>
                 </div>
+              </center>
     
       </div>
     </div>

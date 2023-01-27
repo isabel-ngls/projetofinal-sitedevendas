@@ -24,11 +24,14 @@ botao.addEventListener('click', function login() {
         
         if (pegaEmail == usuarios[i].email && pegaSenha == usuarios[i].senha) {
             validaLogin = true;
-            location.href = "perfil.html";
-        } else {
-        alert('ERRO: E-mail ou senha incorretos ou não cadastrados!')
-    }
+            break;
+        }
     }
 
+    if (validaLogin==true) {
+        location.href = "perfil.html"
+    } else {
+        alert("ERRO: E-mail e senha incorretos ou não cadastrados!")
+    }
     
 })

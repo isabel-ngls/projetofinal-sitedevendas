@@ -41,9 +41,18 @@
         transition: 0.3s;
         }
 
-        .filtro {
-          background-color: #252c3a;
+        h6 {
+          color: #ffff;
         }
+
+        h3 {
+          color: #ffff;
+        }
+
+        .filtro {
+          background-color: #23232e;
+        }
+
         .voltar, .avancar{
     background-color: #0772EB;
     display: inline-block;
@@ -100,8 +109,82 @@
         <h1>LISTA DE LIVROS</h1>
         <br/>
 
+        <!--Filtro-->
+        <section id = "filtro">
+          <h3>Filtrar por: </h3>
+          <div class="mb-3">
+            <label for="exampleFormControlInput1" class="form-label" id = "palavra-chave"><h6>Palavra-chave:</h6></label>
+            <input type="email" class="form-control" id="exampleFormControlInput1">
+          </div>
+
+          <div>
+            <label for="exampleInputEmail1" class="form-label"><h6>Por gênero: </h6></label>
+
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+              <label class="form-check-label" for="flexRadioDefault1">
+                <h6>Fantasia</h6>
+              </label>
+            </div>
+
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2">
+              <label class="form-check-label" for="flexRadioDefault2">
+                <h6>Ficção científica</h6>
+              </label>
+            </div>
+
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault3">
+              <label class="form-check-label" for="flexRadioDefault3">
+                <h6>Romance</h6>
+              </label>
+            </div>
+
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault4">
+              <label class="form-check-label" for="flexRadioDefault4">
+                <h6>Suspense</h6>
+              </label>
+            </div>
+
+            <div>
+              <label for="exampleInputEmail1" class="form-label"><h6>Por preço: </h6></label>
+              
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                <label class="form-check-label" for="flexRadioDefault1">
+                  <h6>De R$ 20,00 a R$ 25,00</h6>
+                </label>
+              </div>
+
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                <label class="form-check-label" for="flexRadioDefault1">
+                  <h6>De R$ 25,00 a R$ 35,00</h6>
+                </label>
+              </div>
+
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                <label class="form-check-label" for="flexRadioDefault1">
+                  <h6>De R$ 35,00 a R$ 50,00</h6>
+                </label>
+              </div>
+
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                <label class="form-check-label" for="flexRadioDefault1">
+                  <h6>Mais de R$ 50,00</h6>
+                </label>
+              </div>
+              <br/>
+
+        </section>
+
         <!--Lista de livros-->
-        <div class = "row" id = "card">
+        <center>
+        <div class = "row">
 
             <div class = "col-md-6 col-xl-3">
               <a href="detalhes/LabFauno_dts.html">
@@ -114,7 +197,7 @@
                   <br/>
             </div>
 
-            <div class = "col-md-6 col-xl-3" id = "card">
+            <div class = "col-md-6 col-xl-3">
               <a href="detalhes/GOT_dts.html">
                 <div class="card" style="width: 18rem;">
                     <img src="imagens/got.jpg" class="card-img-top" alt="Capa do livro A Guerra dos Tronos">
@@ -125,7 +208,7 @@
                   <br/>
             </div>
 
-            <div class = "col-md-6 col-xl-3" id = "card">
+            <div class = "col-md-6 col-xl-3">
               <a href="detalhes/SomOssos_dts.html">
                 <div class="card" style="width: 18rem;">
                     <img src="imagens/SombraOssos.jpg" class="card-img-top" alt="Capa do livro Sombra e Ossos">
@@ -135,52 +218,114 @@
                   </div>
             </div>
 
-      <div class="card col-md-6 col-xl-3">
-        <div class="card-header">
-        <h4>Filtro</h4>
-        </div>
-        <form>
-          <div class="mb-3">
-            <br/>
-            <label for="exampleInputEmail1" class="form-label">Palavra-chave: </label>
-            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-          </div>
-          <div class = "mb-3">
-            <label for="exampleInputEmail1" class="form-label">Gênero: </label>
-            <div class="form-check">
-              <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
-              <label class="form-check-label" for="flexRadioDefault1">
-                Fantasia
-              </label>
-            </div>
-            <div class="form-check">
-              <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2">
-              <label class="form-check-label" for="flexRadioDefault2">
-                Ficção científica
-              </label>
-            </div>
-            <div class="form-check">
-              <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault3">
-              <label class="form-check-label" for="flexRadioDefault3">
-                Romance
-              </label>
-            </div>
-            <div class="form-check">
-              <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault4">
-              <label class="form-check-label" for="flexRadioDefault4">
-                Suspense
-              </label>
-            </div>
-          </div>
-        </form>
-      </div>
+            <div class = "col-md-6 col-xl-3">
+              <a href="detalhes/2001_dts.html">
+                <div class="card" style="width: 18rem;">
+                    <img src="imagens/2001.jpg" class="card-img-top" alt="Capa do livro 2001: Uma Odisseia no Espaço">
+                    <div class="card-body">
+              </a>  <p class="card-text"><center>2001: Uma Odisseia no Espaço</center></p>
+                    </div>
+                  </div>
+                  </div>
 
-        <section class="menu contpag">
-          <div class="voltar">
-              <a href="paginainicial.html">Voltar</a>
-          </div>
-          </section>
-          
+                <div class = "col-md-6 col-xl-3">
+                  <a href="detalhes/FrankS_dts.html">
+                    <div class="card" style="width: 18rem;">
+                        <img src="imagens/frankenstein.png" class="card-img-top" alt="Capa do livro Frankenstein">
+                        <div class="card-body">
+                  </a>  <p class="card-text"><center>Frankenstein</center></p>
+                        </div>
+                      </div>
+                      <br/>
+                </div>
+    
+                <div class = "col-md-6 col-xl-3">
+                  <a href="detalhes/IluTempo_dts.html">
+                    <div class="card" style="width: 18rem;">
+                        <img src="imagens/IlusaoTempo.jpg" class="card-img-top" alt="Capa do livro A Ilusão do Tempo">
+                        <div class="card-body">
+                   </a> <p class="card-text"><center>A Ilusão do Tempo</center></p>
+                        </div>
+                      </div>
+                </div>
+    
+    
+                <div class = "col-md-6 col-xl-3">
+                  <a href="detalhes/UmNosProx_dts.html">
+                    <div class="card" style="width: 18rem;">
+                        <img src="imagens/UmDeNos.jpg" class="card-img-top" alt="Capa do livro Um de nós é o próximo">
+                        <div class="card-body">
+                  </a>  <p class="card-text"><center>Um de nós é o próximo</center></p>
+                        </div>
+                      </div>
+                </div>
+    
+    
+                <div class = "col-md-6 col-xl-3">
+                  <a href="detalhes/AssExprOri_dts.html">
+                    <div class="card" style="width: 18rem;">
+                        <img src="imagens/ExpressoOriente.jpg" class="card-img-top" alt="Capa do livro Assassinato no Expresso do Oriente">
+                        <div class="card-body">
+                  </a>  <p class="card-text"><center>Assassinato no Expresso do Oriente</center></p>
+                        </div>
+                      </div>
+                </div>
+    
+    
+                <div class = "col-md-6 col-xl-3">
+                  <a href="detalhes/CaixaPass_dts.html">
+                    <div class="card" style="width: 18rem;">
+                        <img src="imagens/CaixaDePassaros.jpg" class="card-img-top" alt="Capa do livro Caixa de Pássaros">
+                        <div class="card-body">
+                  </a>  <p class="card-text"><center>Caixa de Pássaros</center></p>
+                        </div>
+                      </div>
+                </div>
+    
+    
+                <div class = "col-md-6 col-xl-3">
+                  <a href="detalhes/OrgPre_dts.html">
+                    <div class="card" style="width: 18rem;">
+                        <img src="imagens/OrgPre.jpg" class="card-img-top" alt="Capa do livro Orgulho e Preconceito">
+                        <div class="card-body">
+                  </a>  <p class="card-text"><center>Orgulho e Preconceito</center></p>
+                        </div>
+                      </div>
+                </div>
+    
+    
+                <div class = "col-md-6 col-xl-3">
+                  <a href="detalhes/7mEH_dts.html">
+                    <div class="card" style="width: 18rem;">
+                        <img src="imagens/EvelynHugo.jpg" class="card-img-top" alt="Capa do livro Os sete maridos de Evelyn Hugo">
+                        <div class="card-body">
+                  </a>  <p class="card-text"><center>Os sete maridos de Evelyn Hugo</center></p>
+                        </div>
+                      </div>
+                </div>
+    
+    
+                <div class = "col-md-6 col-xl-3">
+                  <a href="detalhes/CulpaEstre_dts.html">
+                    <div class="card" style="width: 18rem;">
+                        <img src="imagens/CulpaEstrelas.jpg" class="card-img-top" alt="Capa do livro A Culpa é Das Estrelas">
+                        <div class="card-body">
+                  </a>  <p class="card-text"><center>A Culpa é Das Estrelas</center></p>
+                        </div>
+                      </div>
+                </div>
+              </center>
+    
+      </div>
+    </div>
+
+      <section class="menu contpag">
+        <div class="voltar">
+            <a href="../listadelivros.html">Voltar</a>
+        </div>
+      </section>
+
+
         <footer>
           <br/>
           <br/>

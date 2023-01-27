@@ -76,3 +76,13 @@ background-color: #23232e;
   color: #ffff;
   font-size: small;
   }
+
+  th{
+    border: #23232e solid;
+    text-align-last: center;
+  }
+  td{
+    background-color: #CED4DA ;
+    border: #23232e solid;
+    text-align-last: center;
+    }
